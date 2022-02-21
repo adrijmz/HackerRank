@@ -1,4 +1,4 @@
-package DataStructures;
+package DataStructures.Sort;
 
 import java.util.*;
 
@@ -26,7 +26,6 @@ class StudentComparator implements Comparator<Student>{
 
 	@Override
 	public int compare(Student s1, Student s2) {
-		// TODO Auto-generated method stub
 		if(s1.getCgpa()<s2.getCgpa()) return 1;
 		else if(s1.getCgpa()>s2.getCgpa()) return -1;
 		else{
@@ -62,6 +61,7 @@ public class SortProblem
       	for(Student st: studentList){
 			System.out.println(st.getFname());
 		}
+		in.close();
 	}
 }
 
