@@ -1,4 +1,4 @@
-package DataStructures.PriorityQueue;
+package DataStructures.ThreeMonthPrep;
 
 import java.io.*;
 import java.math.*;
