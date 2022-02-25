@@ -1,4 +1,4 @@
-package DataStructures.ThreeMonthPrep;
+package ThreeMonthPrep;
 
 import java.io.*;
 import java.util.*;
