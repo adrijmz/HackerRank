@@ -1,12 +1,7 @@
 package DataStructures.ProblemSolving.Array;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 class Result {
 
@@ -21,20 +16,12 @@ class Result {
 
     public static List<Integer> rotateLeft(int d, List<Integer> arr) {
     // Write your code here
-        List<Integer> res = new ArrayList<>(arr.size());
-        for(int i=0; i<4; i++){ 
-             for(int j=0; j<arr.size(); j++){
-                  if(j==0){res.add(arr.size()-1, arr.get(0));}
-                  else{
-                      res.add(arr.get(i));
-                  }
-             }
-             arr=res;
-             res.clear();
+        for(int i=0; i<d; i++){ 
+             int saved = arr.remove(0);
+             arr.add(saved);  
         }
-        return res;
+        return arr;
     }
-
 }
 
 public class LeftRotationProblem {
